@@ -1,14 +1,7 @@
-body 
+body
+#colred 
 {
-    background-color:#FFF0F5;
+    color: red;
 }
-.quiz {  
-background-color:White;
-border: 2px solid;
-margin: auto;
-border-color: #123456;
-width: 30%;
-}
-.table {
-    background-color:White
-}
+#colred1
+{ background-COLOR:Red}
