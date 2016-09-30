@@ -1,0 +1,169 @@
+﻿
+<html>
+<script type="text/javascript">
+    function show_pic() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'block';
+        c3_elem.style.display = 'none';
+    }
+    function show_text() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem=document.getElementById("c3");
+        c1_elem.style.display = 'block';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display='none';
+    }
+    function show_quiz() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+    }
+</script>
+   
+
+ <head>
+        <title>
+            E S T O N I A
+        </title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+    </head>
+   
+
+
+ <body>
+        <p align="center">
+            <b>
+                <i>
+                    <font size="+10">
+                        Estonia
+                    </font>
+                </i>
+            </b>
+        </p>
+
+            
+     <div class=" table">
+
+         <table width="100%" border="10" borderCOLOR="#7B68EE">
+
+             <tr>
+                 <td width="33%" id="m1" onclick="show_text()">History</td>
+                 <td width="33%" id="m2" onclick="show_pic()">Map</td>
+                 <td width="33%" id="m3" onclick="show_quiz()">Main Information</td>
+             </tr>
+
+             <tr>
+                 <td colspan="3">
+
+                     <div id="c1" style="display:none">
+                         The history of Estonia is a part of the history of Europe.
+                         Estonia was settled near the end of the last glacial era, beginning from around 8500 BC.
+                         Before the Germans invaded in the 13th century, proto-Estonians of ancient Estonia worshipped the spirits of nature.
+                         Starting with the Northern Crusades in the Middle Ages, Estonia became a battleground for centuries where Denmark, Germany, Russia, Sweden and Poland fought their many wars over controlling the important geographical position of the country as a gateway between East and West.
+                     </div>
+                     <div id="c2"> <img src="amp.jpg" /> </div>
+                     <div id="c3" style="display:none">
+                         <U>Country</U> — Estonia<br>
+                         <U>Type</U> — Public,National, Research,Parliamentary library<br />
+                         <U>Established</U> — 1918(98 years ago)<br />
+                         <U>Location</U> — Tõnismägi 2,15189 Tallinn<br />
+                         <U>Coordinates</U> — 59°25′49″N 24°44′20″E<br />
+                         <U>Size</U> — 3.4 million items (2007)<br />
+                         <U>Legal deposit</U> — Yes, since 1919
+                         <br />
+                         <br />
+                         <div style="float:left; margin-left:50px;">
+                             <b>Access and use</b>
+                         </div>
+
+                         <U><br />Access requirements</U>—Open to anyone of 16 years or older, parent's permission is necessary if younger<br /><br />
+                         <div style="float:left; margin-left:50px;">
+                             <b>
+                                 Other information
+                             </b>
+                         </div>
+                         <br />
+                         <U>Budget</U>—5.6 million Euro<br />
+                         <U>Director</U>—Ms. Janne Andresoo<br />
+                         <U>Staff</U>—314
+                     </div>
+
+                 </td>
+             </tr>
+
+         </table>
+     </div>
+
+       
+     
+     
+      <br />
+        <h2> <tt> <p align ="center"> A little bit quiz</p align></tt>   </h2>
+
+         <div class="quiz">
+             <div class="question">
+             <br><div style="float:left; margin-left:10px;"> How old are you?</div></div>
+             <br />
+             <input type="radio" name="answer">school age</input>
+             <br>
+             <input type="radio" name="answer">18</input>
+             <br>
+             <input type="radio" name="answer"> >18 (but less than 30)</input>
+             <br>
+             <input type="radio" name="answer"> >30 </input><br />
+         <br>
+             <p align="center">
+                 <button>
+             <p align="center">
+                 Подтвердить
+             </p>
+</button>
+             </p align>
+</div>
+     <br />
+     <div class="quiz">
+             <div class="question">
+         <br>
+                 <div style="float:left; margin-left:10px;">Are you interested in geography?</div></div>
+         <br>
+             <input type="radio" name="answer">Yes, I do. I adore it!</input>
+             <br>
+             <input type="radio" name="answer">Oh, no. I found it by random.</input>
+             <br>
+             <input type="radio" name="answer">I'm a teacher. And I don't read this text.</input>
+             <br>
+             <input type="radio" name="answer">I'm a teacher. And I read.</input>
+     <br>
+     <br>
+         <p align="center"><button><p align="center">Подтвердить</p align></button></p>
+         </div>
+     <br />
+     
+     <div class="quiz">
+             <div class="question">
+              <br>
+                 <div style="float:left; margin-left:10px;">
+                     What is printed correctly?</div>
+                 </div>
+             <br>
+             <input type="radio" name="answer">Talin</input>
+             <br>
+             <input type="radio" name="answer">Tallin</input>
+             <br>
+             <input type="radio" name="answer">Talinn</input>
+             <br>
+             <input type="radio" name="answer">Tallinn</input>
+             <br>
+             <br>
+         <p align="center"><button><p align="center">Подтвердить</p align></button></p>
+        </div>
+    
+</body>
+</html>
