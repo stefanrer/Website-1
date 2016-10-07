@@ -1,6 +1,26 @@
-﻿
-<html>
+﻿<html>
 <script type="text/javascript">
+   // function check() {
+        // alert('Да')
+    // }
+
+    function check() {
+        q1elem = document.getElementById('q1');
+        if (q1elem.checked) {
+            alert('Молодец')
+        } else {
+            alert('Храбрец')
+        }
+        q3elem = document.getElementById("q3");
+        reselem = document.getElementById("res");
+        reselem.innerHTML = "Точно " + q3elem.value + '?';
+
+
+
+    }
+
+
+
     function show_pic() {
         var c1_elem = document.getElementById("c1");
         var c2_elem = document.getElementById("c2");
@@ -38,6 +58,24 @@
 
 
  <body>
+ <input id="q1" type=checkbox>
+ <label for="q1">
+привит от гриппа
+</label>
+<br /> 2+2=
+<input name="q2" id="q22" type=radio /><label for="q22"> 3</label>
+<input name="q2" id="q23" type=radio /><label for="q23"> 4</label>
+<input name="q2" id="q24" type=radio /><label for="q24"> 2</label>
+<input name="q2" id="q25" type=radio> <label for="q25">0</label>
+<br />
+Сколько?
+<input type=text id="q3">
+<br />
+<input type=button onclick="check()" value="Check">
+
+
+
+
         <p align="center">
             <b>
                 <i>
@@ -100,7 +138,7 @@
 
          </table>
      </div>
-
+     <div id="res"> Тут будет ответ </div>
        
      
      
@@ -111,59 +149,63 @@
              <div class="question">
              <br><div style="float:left; margin-left:10px;"> How old are you?</div></div>
              <br />
-             <input type="radio" name="answer">school age</input>
+             <label for="q0">
+             <input id="q0" type="radio" name="answer">school age</input></label>
              <br>
-             <input type="radio" name="answer">18</input>
-             <br>
-             <input type="radio" name="answer"> >18 (but less than 30)</input>
-             <br>
-             <input type="radio" name="answer"> >30 </input><br />
-         <br>
-             <p align="center">
-                 <button>
-             <p align="center">
-                 Continue
-             </p>
-</button>
-             </p align>
+             <label for="q123">
+             <input type="radio" id="q123" name="answer">18</input></label>
+             <br><label for="q1234">
+             <input type="radio" id="q1234" name="answer"> >18 (but less than 30)</input></label>
+             <br><label for="q33">
+             <input type="radio" id="q33" name="answer"> >30 </input></label><br />
 </div>
      <br />
      <div class="quiz">
-             <div class="question">
+             <div class="question2">
          <br>
                  <div style="float:left; margin-left:10px;">Are you interested in geography?</div></div>
          <br>
-             <input type="radio" name="answer">Yes, I do. I adore it!</input>
-             <br>
-             <input type="radio" name="answer">Oh, no. I found it by random.</input>
-             <br>
-             <input type="radio" name="answer">I'm a teacher. And I don't read this text.</input>
-             <br>
-             <input type="radio" name="answer">I'm a teacher. And I read.</input>
+          <input id="q34" type=checkbox><label for="q34">
+             Yes, I do. I adore it!</label>
+             <br><label for="135">
+              <input id="135" type=checkbox>
+             Oh, no. I found it by random.</input></label>
+             <br><label for="127">
+              <input id="127" type=checkbox>
+             I'm a teacher. And I don't read this text.</input></label>
+             <br><label for="345">
+              <input id="345" type=checkbox>
+             I'm a teacher. And I read.</input></label>
      <br>
-     <br>
-         <p align="center"><button><p align="center">Continue</p align></button></p>
          </div>
      <br />
      
      <div class="quiz">
-             <div class="question">
+             <div class="question3">
               <br>
                  <div style="float:left; margin-left:10px;">
                      What is printed correctly?</div>
                  </div>
              <br>
-             <input type="radio" name="answer">Talin</input>
+             <label for="1"><input type="radio" id="1" name="answer3">Talin</input></label>
+             <br><label for="29">
+             <input type="radio" id="29" name="answer3">Tallin</input></label>
+             <br><label for="30">
+             <input type="radio" id="30" name="answer3">Talinn</input></label>
+             <br><label for="38">
+             <input type="radio" id="38" name="answer3">Tallinn</input></label>
              <br>
-             <input type="radio" name="answer">Tallin</input>
-             <br>
-             <input type="radio" name="answer">Talinn</input>
-             <br>
-             <input type="radio" name="answer">Tallinn</input>
-             <br>
-             <br>
-         <p align="center"><button><p align="center">Continue</p align></button></p>
+              <div class="quiz">
+             <div class="question4">
+              <br>
+                 <div style="float:left; margin-left:10px;">
+               Вы принцесса Пупырка? 
+               <input type=text> 
+               </div>
+
         </div>
+        <br />
+         <p align="center"><button>Continue</button></p>
     
 </body>
 </html>
