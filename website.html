@@ -1,22 +1,12 @@
 ﻿<html>
 <script type="text/javascript">
-   // function check() {
-        // alert('Да')
-    // }
-
     function check() {
         q1elem = document.getElementById('q1');
         if (q1elem.checked) {
-            alert('Молодец')
+            alert('Well done!')
         } else {
-            alert('Храбрец')
+            alert('Be more attentive please')
         }
-        q3elem = document.getElementById("q3");
-        reselem = document.getElementById("res");
-        reselem.innerHTML = "Точно " + q3elem.value + '?';
-
-
-
     }
 
 
@@ -58,21 +48,6 @@
 
 
  <body>
- <input id="q1" type=checkbox>
- <label for="q1">
-привит от гриппа
-</label>
-<br /> 2+2=
-<input name="q2" id="q22" type=radio /><label for="q22"> 3</label>
-<input name="q2" id="q23" type=radio /><label for="q23"> 4</label>
-<input name="q2" id="q24" type=radio /><label for="q24"> 2</label>
-<input name="q2" id="q25" type=radio> <label for="q25">0</label>
-<br />
-Сколько?
-<input type=text id="q3">
-<br />
-<input type=button onclick="check()" value="Check">
-
 
 
 
@@ -88,25 +63,118 @@
 
             
      <div class=" table">
-
+         <form class="test"> 
          <table width="100%" border="10" borderCOLOR="#7B68EE">
 
              <tr>
-                 <td width="33%" id="m1" onclick="show_text()">History</td>
-                 <td width="33%" id="m2" onclick="show_pic()">Map</td>
-                 <td width="33%" id="m3" onclick="show_quiz()">Main Information</td>
+                 <td width="33%" id="m1" onclick="show_text()"><h2> <tt> <p align="center"> A little bit quiz</p></tt>   </h2></td>
+                 <td width="33%" id="m2" onclick="show_pic()"><h2> <tt> <p align="center">Map</p></tt>   </h2></td>
+                 <td width="33%" id="m3" onclick="show_quiz()"><h2> <tt> <p align="center"> Main information</p></tt>   </h2></td>
              </tr>
 
              <tr>
                  <td colspan="3">
 
                      <div id="c1" style="display:none">
-                         The history of Estonia is a part of the history of Europe.
-                         Estonia was settled near the end of the last glacial era, beginning from around 8500 BC.
-                         Before the Germans invaded in the 13th century, proto-Estonians of ancient Estonia worshipped the spirits of nature.
-                         Starting with the Northern Crusades in the Middle Ages, Estonia became a battleground for centuries where Denmark, Germany, Russia, Sweden and Poland fought their many wars over controlling the important geographical position of the country as a gateway between East and West.
-                     </div>
-                     <div id="c2"> <img src="amp.jpg" /> </div>
+                         <br />
+                         <div class="quiz">
+                             <div class="question4">
+                                 <br>
+          
+                                 <div style="float:left; margin-left:10px;">
+                                     Вы принцесса Пупырка?
+                                 </div>
+                             </div>
+                             <input type=text>
+                         </div>
+                         <br />
+                         <div class="quiz">
+                             <div class="question">
+                                 <br><div style="float:left; margin-left:10px;"> How old are you?</div>
+                             </div>
+                             <br />
+                             <label for="q0">
+                                 <input id="q0" type="radio" name="answer">school age</input>
+                             </label>
+                             <br>
+                             <label for="q123">
+                                 <input type="radio" id="q123" name="answer">18</input>
+                             </label>
+                             <br><label for="q1234">
+                                 <input type="radio" id="q1234" name="answer"> >18 (but less than 30)</input>
+                             </label>
+                             <br><label for="q33">
+                                 <input type="radio" id="q33" name="answer"> >30 </input>
+                             </label><br />
+                         </div>
+                         <br />
+                         <div class="quiz">
+                             <div class="question2">
+                                 <br>
+                                 <div style="float:left; margin-left:10px;">Are you interested in geography?</div>
+                             </div>
+                             <br>
+                             <input id="q34" type=checkbox><label for="q34">
+                                 Yes, I do. I adore it!
+                             </label>
+                             <br><label for="135">
+                                 <input id="135" type=checkbox>
+                                 Oh, no. I found it by random.</input>
+                             </label>
+                             <br><label for="127">
+                                 <input id="127" type=checkbox>
+                                 I'm a teacher. And I'm not reading this text.</input>
+                             </label>
+                             <br><label for="345">
+                                 <input id="345" type=checkbox>
+                                 I'm a teacher. And I am reading.</input>
+                             </label>
+                             <br>
+                         </div>
+                         <br />
+
+                         <div class="quiz">
+                             <div class="question3">
+                                 <br>
+                                 <div style="float:left; margin-left:10px;">
+                                     What is printed correctly?
+                                 </div>
+                             </div>
+                             <br>
+                             <label for="1"><input type="radio" id="1" name="answer3">Talin</input></label>
+                             <br><label for="29">
+                                 <input type="radio" id="29" name="answer3">Tallin</input>
+                             </label>
+                             <br><label for="30">
+                                 <input type="radio" id="30" name="answer3">Talinn</input>
+                             </label>
+                             <br><label for="38">
+                                 <input type="radio" id="38" name="answer3">Tallinn</input>
+                             </label>
+                             <br>
+                         </div>
+
+
+                         <br />
+                         
+                         <br />
+                         <h3>
+                         <input id="q1" type=checkbox>
+                         <label for="q1">
+                            
+                                 Button for Rostislav Eduardovich
+                          
+                            
+
+                         </label>
+                         </h3>
+              
+                         <input   type=button onclick="check()" value="Check">
+                    
+
+</div>
+                     <div id="c2"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2129523.157703326!2d22.74439934031757!3d58.58521547708303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692949c82a04bfd%3A0x40ea9fba4fb425c3!2z0K3RgdGC0L7QvdC40Y8!5e0!3m2!1sru!2sru!4v1476916680832" 
+                                           width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> </div>
                      <div id="c3" style="display:none">
                          <U>Country</U> — Estonia<br>
                          <U>Type</U> — Public,National, Research,Parliamentary library<br />
@@ -131,81 +199,18 @@
                          <U>Budget</U>—5.6 million Euro<br />
                          <U>Director</U>—Ms. Janne Andresoo<br />
                          <U>Staff</U>—314
+                         <br>
+                         <img src="gerb.jpg">
+                        
                      </div>
-
+                    
                  </td>
              </tr>
 
          </table>
      </div>
-     <div id="res"> Тут будет ответ </div>
        
      
-     
-      <br />
-        <h2> <tt> <p align ="center"> A little bit quiz</p align></tt>   </h2>
 
-         <div class="quiz">
-             <div class="question">
-             <br><div style="float:left; margin-left:10px;"> How old are you?</div></div>
-             <br />
-             <label for="q0">
-             <input id="q0" type="radio" name="answer">school age</input></label>
-             <br>
-             <label for="q123">
-             <input type="radio" id="q123" name="answer">18</input></label>
-             <br><label for="q1234">
-             <input type="radio" id="q1234" name="answer"> >18 (but less than 30)</input></label>
-             <br><label for="q33">
-             <input type="radio" id="q33" name="answer"> >30 </input></label><br />
-</div>
-     <br />
-     <div class="quiz">
-             <div class="question2">
-         <br>
-                 <div style="float:left; margin-left:10px;">Are you interested in geography?</div></div>
-         <br>
-          <input id="q34" type=checkbox><label for="q34">
-             Yes, I do. I adore it!</label>
-             <br><label for="135">
-              <input id="135" type=checkbox>
-             Oh, no. I found it by random.</input></label>
-             <br><label for="127">
-              <input id="127" type=checkbox>
-             I'm a teacher. And I don't read this text.</input></label>
-             <br><label for="345">
-              <input id="345" type=checkbox>
-             I'm a teacher. And I read.</input></label>
-     <br>
-         </div>
-     <br />
-     
-     <div class="quiz">
-             <div class="question3">
-              <br>
-                 <div style="float:left; margin-left:10px;">
-                     What is printed correctly?</div>
-                 </div>
-             <br>
-             <label for="1"><input type="radio" id="1" name="answer3">Talin</input></label>
-             <br><label for="29">
-             <input type="radio" id="29" name="answer3">Tallin</input></label>
-             <br><label for="30">
-             <input type="radio" id="30" name="answer3">Talinn</input></label>
-             <br><label for="38">
-             <input type="radio" id="38" name="answer3">Tallinn</input></label>
-             <br>
-              <div class="quiz">
-             <div class="question4">
-              <br>
-                 <div style="float:left; margin-left:10px;">
-               Вы принцесса Пупырка? 
-               <input type=text> 
-               </div>
-
-        </div>
-        <br />
-         <p align="center"><button>Continue</button></p>
-    
 </body>
 </html>
